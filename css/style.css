@@ -11,6 +11,12 @@ body {
 
 p {
     font-size: 1.3rem;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+}
+
+img {
+    max-width: 100%;
 }
 
 figure {
@@ -21,10 +27,9 @@ figure {
     background-color: rgb(219, 219, 219);
 }
 
-img {
+#profile_photo {
     width:200px;
     height: 200px;
-    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -36,7 +41,12 @@ ul {
 /********* general classes *********/
 
 ul li,
-a {
+a,
+.project_container,
+#portfolio,
+#portfolio p,
+#portfolio h2,
+#portfolio h3 {
     background-color: #fff;
 }
 
@@ -62,6 +72,30 @@ a:visited {
 #presentation {
     margin: 10px 0;
     padding: 10px 30px;
-    letter-spacing: 1px;
-    line-height: 1.5; 
+}
+
+/********  Portfolio SECTION **************/
+
+.project_container,
+#contact,
+footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#portfolio {
+    padding: 15px 0;
+}
+
+/********* Contact ***********/
+
+#contact {
+    padding: 30px 0;
+}
+
+
+/********  footer **************/
+
+footer {
+    border-top: 1px solid grey;
 }
