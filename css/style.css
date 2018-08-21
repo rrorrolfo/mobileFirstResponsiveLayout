@@ -1,0 +1,67 @@
+* {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    box-sizing: content-box;
+    background-color: rgb(241, 241, 241);
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+figure {
+    
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px 0;
+    background-color: rgb(219, 219, 219);
+}
+
+img {
+    width:200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/********* general classes *********/
+
+ul li,
+a {
+    background-color: #fff;
+}
+
+
+/*********** NAV ***********/
+
+ul li {
+    margin: 7px 15px;;    
+}
+
+a {
+    padding: 10px 0;
+    text-decoration: none;
+    display: block;
+}
+
+a:visited {
+    color: #000;
+}
+
+/********  HOME SECTION **************/
+
+#presentation {
+    margin: 10px 0;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    line-height: 1.5; 
+}
