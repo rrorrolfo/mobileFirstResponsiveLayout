@@ -46,7 +46,11 @@ nav a,
 #portfolio,
 #portfolio p,
 #portfolio h2,
-#portfolio h3 {
+#portfolio h3,
+#contact,
+#contact p,
+#contact h2,
+#contact strong {
     background-color: #fff;
 }
 
@@ -91,6 +95,7 @@ nav a:hover {
 /********  Portfolio SECTION **************/
 
 .project_container,
+#skills,
 #contact,
 footer {
     width: 90%;
@@ -105,10 +110,64 @@ footer {
     font-family: 'Poiret One', cursive;
 }
 
+/********* Skills ***********/
+
+#skills {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#skills h2 {
+    flex-basis: 100%
+}
+
+.skills_container {
+    flex-basis: 45%;
+    font-weight: 800;
+    color: #fff;
+    border: 5px solid #fff;
+}
+
+.skills_container p {
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+.skills_container:nth-child(-n+3) {
+    margin-bottom: 20px;
+}
+
+.ht_color,
+.ht_color p {
+    background-color: rgb(228, 92, 38);
+}
+
+.cs_color,
+.cs_color p {
+    background-color: rgb(0, 3, 160);
+}
+
+.sass_color,
+.sass_color p {
+    background-color: rgb(211, 147, 147)
+}
+
+.js_color,
+.js_color p {
+    background-color: rgb(192, 6, 6);
+}
+
 /********* Contact ***********/
 
 #contact {
-    padding: 30px 0;
+    margin: 30px 0 0;
+    padding: 0 5%;
+}
+
+#contact p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 20px;
 }
 
 
@@ -174,9 +233,8 @@ nav a {
     flex-basis: 45%;
 }
 
-#contact p,
-footer p {
-    padding: 15px 35px 20px;
+#contact p {
+    padding: 15px 21px 20px;
 }
 
 #toogle_link {
@@ -215,6 +273,15 @@ footer p {
 
     .project_container {
         flex-basis: 30%;
+    }
+
+    .skills_container {
+        flex-basis: 20%;
+        margin-top: 20px;
+    }
+
+    .skills_container:nth-child(-n+3){
+        margin-bottom: 0;
     }
 
     footer p {
